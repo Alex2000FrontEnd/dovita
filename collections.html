@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <title>Dovita</title>
+    <meta name="description" content="Описание сайта">
+    <link rel="icon" type="image/png" href="assets/favicon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg">
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <meta name="apple-mobile-web-app-title" content="Dovita">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <script defer src="assets/js/bundle.min.js"></script>
+</head>
+
+<body data-scrollbar>
+
+    <!-- HEADER -->
+    <header class="header" data-header="module" data-scrollbar>
+        <nav class="container">
+            <div class="header__top">
+                <ul class="header__lang">
+                    <li class="header__lang-item">
+                        <a href="#" class="header__lang-btn active">ENG</a>
+                    </li>
+                    <li class="header__lang-item">
+                        <a href="#" class="header__lang-btn">ITA</a>
+                    </li>
+                </ul>
+                <a href="#form-section" class="header__btn-modal">записаться на примерку</a>
+            </div>
+            <div class="header__bottom">
+                <button class="hamburger header__hamburger" type="button" aria-label="навигация">
+                    <span class="hamburger__stick"></span>
+                    <span class="hamburger__stick"></span>
+                    <span class="hamburger__stick"></span>
+                </button>
+                <div class="header__bottom-left">
+                    <a href="index.html" class="logo header__logo">
+                        <img src="assets/img/logo.svg" alt="Dovita" width="140" height="38">
+                    </a>
+                </div>
+                <div class="header__bottom-center">
+                    <ul class="header__list">
+                        <li class="header__list-item">
+                            <a href="collections.html" class="header__list-link">Коллекции</a>
+                        </li>
+                        <li class="header__list-item">
+                            <a href="collections.html" class="header__list-link">Свадебные платья</a>
+                        </li>
+                        <li class="header__list-item">
+                            <a href="#" class="header__list-link">Аксессуары</a>
+                        </li>
+                        <li class="header__list-item">
+                            <a href="about.html" class="header__list-link">О бренде</a>
+                        </li>
+                        <li class="header__list-item">
+                            <a href="blog_1.html" class="header__list-link">Блог</a>
+                        </li>
+                        <li class="header__list-item">
+                            <a href="trunk_show_1.html" class="header__list-link">Trunk show</a>
+                        </li>
+                        <li class="header__list-item">
+                            <a href="stores.html" class="header__list-link">Магазины</a>
+                        </li>
+                        <li class="header__list-item">
+                            <a href="contacts.html" class="header__list-link">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header__bottom-right">
+                    <button class="header__btn-search" type="button" data-trigger="search" aria-label="поиск"><span></span></button>
+                    <a href="#" class="header__btn-saved" aria-label="избранное"><span></span></a>
+                    <a href="#" class="header__btn-profile" aria-label="профиль"><span></span></a>
+                </div>
+            </div>
+        </nav>
+        <div class="header__search">
+            <div class="header__search-wrapper">
+                <form method="get" action="/" class="header__search-form" data-form="search-global">
+                    <label class="input">
+                        <span class="el-hidden">Поиск...</span>
+                        <input type="search" name="s" placeholder="Поиск..." data-search>
+                        <span class="input__message" data-error></span>
+                    </label>
+                    <button class="header__search-btn" type="submit" aria-label="поиск">
+                        <svg width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_198_1079)">
+                                <path d="M13.609 4.208a9.125 9.125 0 11-9.117 9.125 9.167 9.167 0 019.117-9.125zm0-1.708a10.833 10.833 0 100 21.667 10.833 10.833 0 000-21.667zm15.558 25.242l-6.142-6.184-1.183 1.175 6.142 6.184a.834.834 0 101.183-1.175z" />
+                            </g>
+                            <defs>
+                                <clippath id="clip0_198_1079">
+                                    <path d="M0 0h30v30H0z" />
+                                </clippath>
+                            </defs>
+                        </svg>
+                    </button>
+                </form>
+                <button class="header__search-btn-close" type="button" aria-label="закрыть"></button>
+            </div>
+        </div>
+    </header>
+
+    <nav class="nav-mobile" data-nav-mobile="module">
+        <div class="nav-mobile__big-wrapper">
+            <div class="nav-mobile__wrapper">
+                <div class="nav-mobile__main">
+                    <ul class="nav-mobile__list">
+                        <li class="nav-mobile__list-item">
+                            <a href="collections.html" class="nav-mobile__list-link">Коллекции</a>
+                        </li>
+                        <li class="nav-mobile__list-item">
+                            <a href="collections.html" class="nav-mobile__list-link">Свадебные платья</a>
+                        </li>
+                        <li class="nav-mobile__list-item">
+                            <a href="#" class="nav-mobile__list-link">Аксессуары</a>
+                        </li>
+                        <li class="nav-mobile__list-item">
+                            <a href="about.html" class="nav-mobile__list-link">О бренде</a>
+                        </li>
+                        <li class="nav-mobile__list-item">
+                            <a href="blog_1.html" class="nav-mobile__list-link">Блог</a>
+                        </li>
+                        <li class="nav-mobile__list-item">
+                            <a href="trunk_show_1.html" class="nav-mobile__list-link">Trunk show</a>
+                        </li>
+                        <li class="nav-mobile__list-item">
+                            <a href="stores.html" class="nav-mobile__list-link">Магазины</a>
+                        </li>
+                        <li class="nav-mobile__list-item">
+                            <a href="contacts.html" class="nav-mobile__list-link">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- HEADER end -->
+
+    <main class="page">
+
+        <!-- BREAD-CRUMBS -->
+        <div class="container">
+            <ul class="bread-crumbs">
+                <li class="bread-crumbs__item">
+                    <a href="index.html" class="bread-crumbs__link">DOVITABRIDAL</a>
+                </li>
+                <li class="bread-crumbs__item">
+                    <a href="collections.html" class="bread-crumbs__link">Коллекции</a>
+                </li>
+                <li class="bread-crumbs__item">
+                    <a href="#" class="bread-crumbs__link">Dovita premium</a>
+                </li>
+                <li class="bread-crumbs__item">
+                    <a href="#" class="bread-crumbs__link active">Galaxy Collection</a>
+                </li>
+            </ul>
+        </div>
+        <!-- BREAD-CRUMBS end -->
+
+
+        <!-- NAV-COLLECTION -->
+        <div class="nav-collection">
+            <div class="container">
+                <div class="slider nav-collection__slider">
+                    <div class="slider__wrapper" data-slider="free-mode">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide">
+                                <a href="#" class="nav-collection__slide active">
+                                    <p class="nav-collection__name">Dovita premium</p>
+                                    <div class="nav-collection__wrapper-img">
+                                        <div class="nav-collection__img img-cover">
+                                            <picture>
+                                                <source srcset="assets/img/collections/nav/image_1.webp" type="image/webp">
+                                                <img src="assets/img/collections/nav/image_1.jpg" alt width="280" height="160">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#" class="nav-collection__slide">
+                                    <p class="nav-collection__name">Dovita couture</p>
+                                    <div class="nav-collection__wrapper-img">
+                                        <div class="nav-collection__img img-cover">
+                                            <picture>
+                                                <source srcset="assets/img/collections/nav/image_2.webp" type="image/webp">
+                                                <img src="assets/img/collections/nav/image_2.jpg" alt width="280" height="160">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#" class="nav-collection__slide">
+                                    <p class="nav-collection__name">Dovita in white</p>
+                                    <div class="nav-collection__wrapper-img">
+                                        <div class="nav-collection__img img-cover">
+                                            <picture>
+                                                <source srcset="assets/img/collections/nav/image_3.webp" type="image/webp">
+                                                <img src="assets/img/collections/nav/image_3.jpg" alt width="280" height="160">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#" class="nav-collection__slide">
+                                    <p class="nav-collection__name">Dovita kids</p>
+                                    <div class="nav-collection__wrapper-img">
+                                        <div class="nav-collection__img img-cover">
+                                            <picture>
+                                                <source srcset="assets/img/collections/nav/image_4.webp" type="image/webp">
+                                                <img src="assets/img/collections/nav/image_4.jpg" alt width="280" height="160">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- NAV-COLLECTION end -->
+
+
+        <!-- COLLECTIONS -->
+        <div class="collections collections--grid-3" data-collections="module">
+            <h1 class="el-hidden">Galaxy Collection</h1>
+            <div class="container">
+                <div class="menu-collection">
+                    <hr class="menu-collection__line">
+                    <div class="menu-collection__wrapper">
+                        <div class="menu-collection__wrapper-left">
+                            <button class="menu-collection__filter" type="button">
+                                <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M.07 7.714c.268.986.994 1.768 1.91 2.06l.282.09.001 4.809.001 4.809.088.172c.118.23.254.323.507.343.23.018.399-.066.555-.277.082-.11.082-.115.102-4.978l.02-4.868.253-.087c1.154-.391 1.927-1.38 2.02-2.581.102-1.327-.851-2.675-2.117-2.994l-.176-.044V.436l-.09-.132c-.15-.223-.328-.319-.56-.3a.597.597 0 00-.527.358c-.068.15-.073.29-.074 1.98v1.82l-.226.071A2.963 2.963 0 00.13 6.112c-.144.426-.173 1.187-.06 1.602zm1.219-1.07c.149-.647.713-1.159 1.392-1.264.687-.106 1.41.285 1.714.929.536 1.132-.378 2.455-1.624 2.351a1.657 1.657 0 01-1.482-2.016zm5.827 6.698c.097.81.594 1.611 1.284 2.068.258.171.638.345.862.394l.118.026.011 1.89c.01 1.84.013 1.893.092 1.998.153.205.278.269.525.269.248 0 .373-.064.526-.27.078-.104.08-.158.091-1.996l.011-1.888.17-.043c.092-.023.334-.125.536-.225.307-.153.426-.242.721-.54.295-.296.384-.417.537-.726.234-.473.311-.805.31-1.328-.002-.812-.262-1.43-.847-2.014-.396-.395-.722-.604-1.145-.733l-.282-.087-.011-4.873c-.01-4.852-.01-4.873-.091-4.98-.153-.206-.278-.27-.526-.27-.247 0-.372.064-.525.27-.08.107-.081.128-.091 4.981l-.01 4.874-.248.07a3.007 3.007 0 00-.517.221 2.939 2.939 0 00-1.5 2.912zm1.418-1.086c.613-1.239 2.377-1.216 2.972.04.117.248.125.292.125.695 0 .412-.006.443-.133.703-.328.664-1.059 1.05-1.749.923a1.694 1.694 0 01-1.33-1.157c-.033-.098-.049-.298-.042-.532.01-.345.023-.4.157-.672zm5.7-4.785a2.948 2.948 0 001.993 2.314l.254.086.02 4.882c.019 4.805.02 4.884.098 4.987.289.388.882.332 1.079-.101.07-.153.073-.365.074-4.968l.002-4.807.283-.09c.42-.134.788-.368 1.143-.729.363-.369.528-.63.699-1.106.117-.327.122-.369.12-.928 0-.538-.01-.613-.109-.9a2.966 2.966 0 00-1.913-1.878l-.225-.07v-1.82C17.75.653 17.744.51 17.677.363a.605.605 0 00-.51-.36c-.213-.02-.354.04-.53.225l-.118.124-.01 1.904-.011 1.904-.29.09c-.588.182-1.223.685-1.573 1.245a2.915 2.915 0 00-.402 1.976zm1.329-1.014c.249-.723 1.022-1.193 1.772-1.077 1.024.158 1.658 1.152 1.357 2.127-.254.82-1.13 1.321-1.947 1.112a1.565 1.565 0 01-.773-.42 1.647 1.647 0 01-.41-1.742z" fill="#fff" />
+                                </svg>
+                                <span class="menu-collection__filter-text menu-collection__filter-text--no-active">Показать фильтр</span>
+                                <span class="menu-collection__filter-text menu-collection__filter-text--active">скрыть фильтр</span>
+                            </button>
+                        </div>
+                        <div class="menu-collection__wrapper-right">
+                            <div class="menu-collection__sort-wrapper">
+                                <div class="menu-collection__sort">
+                                    <button class="menu-collection__sort-active" type="button">Новые</button>
+                                    <ul class="menu-collection__sort-list">
+                                        <li class="menu-collection__sort-list-item">
+                                            <button class="menu-collection__sort-list-btn active" type="button" data-value="Новые">Новые</button>
+                                        </li>
+                                        <li class="menu-collection__sort-list-item">
+                                            <button class="menu-collection__sort-list-btn" type="button" data-value="Старые">Старые</button>
+                                        </li>
+                                        <li class="menu-collection__sort-list-item">
+                                            <button class="menu-collection__sort-list-btn" type="button" data-value="Популярное">Популярное</button>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <input type="hidden" form="filter-collection" name="usersort" value="Новые" class="menu-collection__input">
+                            </div>
+                            <ul class="menu-collection__grid">
+                                <li class="menu-collection__grid-item">
+                                    <button class="menu-collection__grid-btn menu-collection__grid-btn--grid-3 active" type="button"></button>
+                                </li>
+                                <li class="menu-collection__grid-item">
+                                    <button class="menu-collection__grid-btn menu-collection__grid-btn--grid-2" type="button"></button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr class="menu-collection__line">
+                </div>
+                <div class="collections__wrapper">
+                    <div class="collections__wrapper-left">
+                        <form action="server.php" id="filter-collection" class="filter-collection">
+                            <div class="filter-collection__block">
+                                <ul class="filter-collection__selected">
+                                    <li class="filter-collection__selected-item">
+                                        <button class="filter-collection__selected-btn" type="button">Galaxy collection</button>
+                                    </li>
+                                    <li class="filter-collection__selected-item">
+                                        <button class="filter-collection__selected-btn" type="button">Mermaid</button>
+                                    </li>
+                                    <li class="filter-collection__selected-item">
+                                        <button class="filter-collection__selected-btn" type="button">Square</button>
+                                    </li>
+                                </ul>
+                                <button class="filter-collection__btn-reset" type="reset">Очистить фильтр</button>
+                                <hr class="filter-collection__line">
+                            </div>
+                            <div class="filter-collection__block active">
+                                <button class="filter-collection__name" type="button">Collection</button>
+                                <div class="filter-collection__wrapper-list">
+                                    <ul class="filter-collection__list">
+                                        <li class="filter-collection__list-item">
+                                            <label class="filter-collection__input">
+                                                <input type="checkbox" name="collection" value="Galaxy collection" class="filter-collection__input-input">
+                                                <span class="filter-collection__input-wrapper">
+                                                    <span class="filter-collection__input-checkbox"></span>
+                                                    <span class="filter-collection__input-name">Galaxy collection</span>
+                                                </span>
+                                            </label>
+                                        </li>
+                                        <li class="filter-collection__list-item">
+                                            <label class="filter-collection__input">
+                                                <input type="checkbox" name="collection" value="Seasons collection" class="filter-collection__input-input">
+                                                <span class="filter-collection__input-wrapper">
+                                                    <span class="filter-collection__input-checkbox"></span>
+                                                    <span class="filter-collection__input-name">Seasons collection</span>
+                                                </span>
+                                            </label>
+                                        </li>
+                                        <li class="filter-collection__list-item">
+                                            <label class="filter-collection__input">
+                                                <input type="checkbox" name="collection" value="Crystal collection" class="filter-collection__input-input">
+                                                <span class="filter-collection__input-wrapper">
+                                                    <span class="filter-collection__input-checkbox"></span>
+                                                    <span class="filter-collection__input-name">Crystal collection</span>
+                                                </span>
+                                            </label>
+                                        </li>
+                                        <li class="filter-collection__list-item">
+                                            <label class="filter-collection__input">
+                                                <input type="checkbox" name="collection" value="Zodiak collection" class="filter-collection__input-input">
+                                                <span class="filter-collection__input-wrapper">
+                                                    <span class="filter-collection__input-checkbox"></span>
+                                                    <span class="filter-collection__input-name">Zodiak collection</span>
+                                                </span>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <hr class="filter-collection__line">
+                            </div>
+                            <div class="filter-collection__block">
+                                <button class="filter-collection__name" type="button">Neckline</button>
+                                <div class="filter-collection__wrapper-list">
+                                    <ul class="filter-collection__list">
+                                        <li class="filter-collection__list-item">
+                                            <label class="filter-collection__input">
+                                                <input type="checkbox" name="Neckline" value="V-neck" class="filter-collection__input-input">
+                                                <span class="filter-collection__input-wrapper">
+                                                    <span class="filter-collection__input-checkbox"></span>
+                                                    <span class="filter-collection__input-name">V-neck</span>
+                                                </span>
+                                            </label>
+                                        </li>
+                                        <li class="filter-collection__list-item">
+                                            <label class="filter-collection__input">
+                                                <input type="checkbox" name="Neckline" value="Sweetheart" class="filter-collection__input-input">
+                                                <span class="filter-collection__input-wrapper">
+                                                    <span class="filter-collection__input-checkbox"></span>
+                                                    <span class="filter-collection__input-name">Sweetheart</span>
+                                                </span>
+                                            </label>
+                                        </li>
+                                        <li class="filter-collection__list-item">
+                                            <label class="filter-collection__input">
+                                                <input type="checkbox" name="Neckline" value="Strapless" class="filter-collection__input-input">
+                                                <span class="filter-collection__input-wrapper">
+                                                    <span class="filter-collection__input-checkbox"></span>
+                                                    <span class="filter-collection__input-name">Strapless</span>
+                                                </span>
+                                            </label>
+                                        </li>
+                                        <li class="filter-collection__list-item">
+                                            <label class="filter-collection__input">
+                                                <input type="checkbox" name="Neckline" value="Boat neck" class="filter-collection__input-input">
+                                                <span class="filter-collection__input-wrapper">
+                                                    <span class="filter-collection__input-checkbox"></span>
+                                                    <span class="filter-collection__input-name">Boat neck</span>
+                                                </span>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <hr class="filter-collection__line">
+                            </div>
+                            <div class="filter-collection__block active">
+                                <button class="filter-collection__name" type="button">Silhouette</button>
+                                <div class="filter-collection__wrapper-list">
+                                    <ul class="filter-collection__list-icon">
+                                        <li class="filter-collection__list-icon-item">
+                                            <label class="filter-collection__list-icon-input">
+                                                <input type="checkbox" name="Silhouette" value="A-line" class="filter-collection__list-icon-input-input">
+                                                <span class="filter-collection__list-icon-input-wrapper">
+                                                    <span class="filter-collection__list-icon-input-name">A-line</span>
+                                                    <span class="filter-collection__list-icon-input-icon img-contain">
+                                                        <img src="assets/icons/collection/filter/icon_1.svg" alt width="68" height="72" loading="lazy">
+                                                    </span>
+                                                </span>
+                                            </label>
+                                        </li>
+                                        <li class="filter-collection__list-icon-item">
+                                            <label class="filter-collection__list-icon-input">
+                                                <input type="checkbox" name="Silhouette" value="Ball Grown" class="filter-collection__list-icon-input-input">
+                                                <span class="filter-collection__list-icon-input-wrapper">
+                                                    <span class="filter-collection__list-icon-input-name">Ball Grown</span>
+                                                    <span class="filter-collection__list-icon-input-icon img-contain">
+                                                        <img src="assets/icons/collection/filter/icon_2.svg" alt width="68" height="72" loading="lazy">
+                                                    </span>
+                                                </span>
+                                            </label>
+                                        </li>
+                                        <li class="filter-collection__list-icon-item">
+                                            <label class="filter-collection__list-icon-input">
+                                                <input type="checkbox" name="Silhouette" value="Flared cut" class="filter-collection__list-icon-input-input">
+                                                <span class="filter-collection__list-icon-input-wrapper">
+                                                    <span class="filter-collection__list-icon-input-name">Flared cut</span>
+                                                    <span class="filter-collection__list-icon-input-icon img-contain">
+                                                        <img src="assets/icons/collection/filter/icon_3.svg" alt width="68" height="72" loading="lazy">
+                                                    </span>
+                                                </span>
+                                            </label>
+                                        </li>
+                                        <li class="filter-collection__list-icon-item">
+                                            <label class="filter-collection__list-icon-input">
+                                                <input type="checkbox" name="Silhouette" value="Mermaid" class="filter-collection__list-icon-input-input">
+                                                <span class="filter-collection__list-icon-input-wrapper">
+                                                    <span class="filter-collection__list-icon-input-name">Mermaid</span>
+                                                    <span class="filter-collection__list-icon-input-icon img-contain">
+                                                        <img src="assets/icons/collection/filter/icon_4.svg" alt width="68" height="72" loading="lazy">
+                                                    </span>
+                                                </span>
+                                            </label>
+                                        </li>
+                                        <li class="filter-collection__list-icon-item">
+                                            <label class="filter-collection__list-icon-input">
+                                                <input type="checkbox" name="Silhouette" value="Sheath" class="filter-collection__list-icon-input-input">
+                                                <span class="filter-collection__list-icon-input-wrapper">
+                                                    <span class="filter-collection__list-icon-input-name">Sheath</span>
+                                                    <span class="filter-collection__list-icon-input-icon img-contain">
+                                                        <img src="assets/icons/collection/filter/icon_5.svg" alt width="68" height="72" loading="lazy">
+                                                    </span>
+                                                </span>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <hr class="filter-collection__line">
+                            </div>
+                            <div class="filter-collection__block">
+                                <button class="filter-collection__name" type="button">Length</button>
+                                <div class="filter-collection__wrapper-list">
+                                    <ul class="filter-collection__list">
+                                        <li class="filter-collection__list-item">
+                                            <label class="filter-collection__input">
+                                                <input type="checkbox" name="Length" value="Floor-length" class="filter-collection__input-input">
+                                                <span class="filter-collection__input-wrapper">
+                                                    <span class="filter-collection__input-checkbox"></span>
+                                                    <span class="filter-collection__input-name">Floor-length</span>
+                                                </span>
+                                            </label>
+                                        </li>
+                                        <li class="filter-collection__list-item">
+                                            <label class="filter-collection__input">
+                                                <input type="checkbox" name="Length" value="Tea-length" class="filter-collection__input-input">
+                                                <span class="filter-collection__input-wrapper">
+                                                    <span class="filter-collection__input-checkbox"></span>
+                                                    <span class="filter-collection__input-name">Tea-length</span>
+                                                </span>
+                                            </label>
+                                        </li>
+                                        <li class="filter-collection__list-item">
+                                            <label class="filter-collection__input">
+                                                <input type="checkbox" name="Length" value="Knee-length" class="filter-collection__input-input">
+                                                <span class="filter-collection__input-wrapper">
+                                                    <span class="filter-collection__input-checkbox"></span>
+                                                    <span class="filter-collection__input-name">Knee-length</span>
+                                                </span>
+                                            </label>
+                                        </li>
+                                        <li class="filter-collection__list-item">
+                                            <label class="filter-collection__input">
+                                                <input type="checkbox" name="Length" value="Hi-low" class="filter-collection__input-input">
+                                                <span class="filter-collection__input-wrapper">
+                                                    <span class="filter-collection__input-checkbox"></span>
+                                                    <span class="filter-collection__input-name">Hi-low</span>
+                                                </span>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <hr class="filter-collection__line">
+                            </div>
+                            <div class="filter-collection__block active">
+                                <button class="filter-collection__name" type="button">Back type</button>
+                                <div class="filter-collection__wrapper-list">
+                                    <ul class="filter-collection__list">
+                                        <li class="filter-collection__list-item">
+                                            <label class="filter-collection__input">
+                                                <input type="checkbox" name="Back type" value="Tattoo" class="filter-collection__input-input">
+                                                <span class="filter-collection__input-wrapper">
+                                                    <span class="filter-collection__input-checkbox"></span>
+                                                    <span class="filter-collection__input-name">Tattoo</span>
+                                                </span>
+                                            </label>
+                                        </li>
+                                        <li class="filter-collection__list-item">
+                                            <label class="filter-collection__input">
+                                                <input type="checkbox" name="Back type" value="Open" class="filter-collection__input-input">
+                                                <span class="filter-collection__input-wrapper">
+                                                    <span class="filter-collection__input-checkbox"></span>
+                                                    <span class="filter-collection__input-name">Open</span>
+                                                </span>
+                                            </label>
+                                        </li>
+                                        <li class="filter-collection__list-item">
+                                            <label class="filter-collection__input">
+                                                <input type="checkbox" name="Back type" value="Crew" class="filter-collection__input-input">
+                                                <span class="filter-collection__input-wrapper">
+                                                    <span class="filter-collection__input-checkbox"></span>
+                                                    <span class="filter-collection__input-name">Crew</span>
+                                                </span>
+                                            </label>
+                                        </li>
+                                        <li class="filter-collection__list-item">
+                                            <label class="filter-collection__input">
+                                                <input type="checkbox" name="Back type" value="V-back" class="filter-collection__input-input">
+                                                <span class="filter-collection__input-wrapper">
+                                                    <span class="filter-collection__input-checkbox"></span>
+                                                    <span class="filter-collection__input-name">V-back</span>
+                                                </span>
+                                            </label>
+                                        </li>
+                                        <li class="filter-collection__list-item">
+                                            <label class="filter-collection__input">
+                                                <input type="checkbox" name="Back type" value="Square" class="filter-collection__input-input">
+                                                <span class="filter-collection__input-wrapper">
+                                                    <span class="filter-collection__input-checkbox"></span>
+                                                    <span class="filter-collection__input-name">Square</span>
+                                                </span>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <hr class="filter-collection__line">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="collections__wrapper-right">
+                        <ul class="collections__content">
+                            <li class="collections__content-item">
+                                <article class="collection-card">
+                                    <button class="collection-card__btn" type="button" aria-label="Добавить в избранное"></button>
+                                    <a href="product_card.html" class="collection-card__wrapper">
+                                        <h2 class="collection-card__name">Neptune wedding dress</h2>
+                                        <div class="collection-card__img img-cover">
+                                            <picture>
+                                                <source srcset="assets/img/collections/image_1.webp" type="image/webp">
+                                                <img src="assets/img/collections/image_1.jpg" alt width="380" height="500" loading="lazy">
+                                            </picture>
+                                        </div>
+                                    </a>
+                                </article>
+                            </li>
+                            <li class="collections__content-item">
+                                <article class="collection-card">
+                                    <button class="collection-card__btn" type="button" aria-label="Добавить в избранное"></button>
+                                    <a href="product_card.html" class="collection-card__wrapper">
+                                        <h2 class="collection-card__name">Sun wedding dress</h2>
+                                        <div class="collection-card__img img-cover">
+                                            <picture>
+                                                <source srcset="assets/img/collections/image_2.webp" type="image/webp">
+                                                <img src="assets/img/collections/image_2.jpg" alt width="380" height="500" loading="lazy">
+                                            </picture>
+                                        </div>
+                                    </a>
+                                </article>
+                            </li>
+                            <li class="collections__content-item">
+                                <article class="collection-card">
+                                    <button class="collection-card__btn" type="button" aria-label="Добавить в избранное"></button>
+                                    <a href="product_card.html" class="collection-card__wrapper">
+                                        <h2 class="collection-card__name">Jupiter wedding dress</h2>
+                                        <div class="collection-card__img img-cover">
+                                            <picture>
+                                                <source srcset="assets/img/collections/image_3.webp" type="image/webp">
+                                                <img src="assets/img/collections/image_3.jpg" alt width="380" height="500" loading="lazy">
+                                            </picture>
+                                        </div>
+                                    </a>
+                                </article>
+                            </li>
+                            <li class="collections__content-item">
+                                <article class="collection-card">
+                                    <button class="collection-card__btn" type="button" aria-label="Добавить в избранное"></button>
+                                    <a href="product_card.html" class="collection-card__wrapper">
+                                        <h2 class="collection-card__name">Pluto wedding dress</h2>
+                                        <div class="collection-card__img img-cover">
+                                            <picture>
+                                                <source srcset="assets/img/collections/image_4.webp" type="image/webp">
+                                                <img src="assets/img/collections/image_4.jpg" alt width="380" height="500" loading="lazy">
+                                            </picture>
+                                        </div>
+                                    </a>
+                                </article>
+                            </li>
+                            <li class="collections__content-item">
+                                <article class="collection-card">
+                                    <button class="collection-card__btn" type="button" aria-label="Добавить в избранное"></button>
+                                    <a href="product_card.html" class="collection-card__wrapper">
+                                        <h2 class="collection-card__name">Mercury wedding dress</h2>
+                                        <div class="collection-card__img img-cover">
+                                            <picture>
+                                                <source srcset="assets/img/collections/image_5.webp" type="image/webp">
+                                                <img src="assets/img/collections/image_5.jpg" alt width="380" height="500" loading="lazy">
+                                            </picture>
+                                        </div>
+                                    </a>
+                                </article>
+                            </li>
+                            <li class="collections__content-item">
+                                <article class="collection-card">
+                                    <button class="collection-card__btn" type="button" aria-label="Добавить в избранное"></button>
+                                    <a href="product_card.html" class="collection-card__wrapper">
+                                        <h2 class="collection-card__name">Solar wedding dress</h2>
+                                        <div class="collection-card__img img-cover">
+                                            <picture>
+                                                <source srcset="assets/img/collections/image_6.webp" type="image/webp">
+                                                <img src="assets/img/collections/image_6.jpg" alt width="380" height="500" loading="lazy">
+                                            </picture>
+                                        </div>
+                                    </a>
+                                </article>
+                            </li>
+                            <li class="collections__content-item">
+                                <article class="collection-card">
+                                    <button class="collection-card__btn" type="button" aria-label="Добавить в избранное"></button>
+                                    <a href="product_card.html" class="collection-card__wrapper">
+                                        <h2 class="collection-card__name">Mars wedding dress</h2>
+                                        <div class="collection-card__img img-cover">
+                                            <picture>
+                                                <source srcset="assets/img/collections/image_7.webp" type="image/webp">
+                                                <img src="assets/img/collections/image_7.jpg" alt width="380" height="500" loading="lazy">
+                                            </picture>
+                                        </div>
+                                    </a>
+                                </article>
+                            </li>
+                            <li class="collections__content-item">
+                                <article class="collection-card">
+                                    <button class="collection-card__btn" type="button" aria-label="Добавить в избранное"></button>
+                                    <a href="product_card.html" class="collection-card__wrapper">
+                                        <h2 class="collection-card__name">Mars wedding dress</h2>
+                                        <div class="collection-card__img img-cover">
+                                            <picture>
+                                                <source srcset="assets/img/collections/image_8.webp" type="image/webp">
+                                                <img src="assets/img/collections/image_8.jpg" alt width="380" height="500" loading="lazy">
+                                            </picture>
+                                        </div>
+                                    </a>
+                                </article>
+                            </li>
+                            <li class="collections__content-item">
+                                <article class="collection-card">
+                                    <button class="collection-card__btn" type="button" aria-label="Добавить в избранное"></button>
+                                    <a href="product_card.html" class="collection-card__wrapper">
+                                        <h2 class="collection-card__name">Uranus wedding dress</h2>
+                                        <div class="collection-card__img img-cover">
+                                            <picture>
+                                                <source srcset="assets/img/collections/image_9.webp" type="image/webp">
+                                                <img src="assets/img/collections/image_9.jpg" alt width="380" height="500" loading="lazy">
+                                            </picture>
+                                        </div>
+                                    </a>
+                                </article>
+                            </li>
+                            <li class="collections__content-item">
+                                <article class="collection-card">
+                                    <button class="collection-card__btn" type="button" aria-label="Добавить в избранное"></button>
+                                    <a href="product_card.html" class="collection-card__wrapper">
+                                        <h2 class="collection-card__name">Venus wedding dress</h2>
+                                        <div class="collection-card__img img-cover">
+                                            <picture>
+                                                <source srcset="assets/img/collections/image_10.webp" type="image/webp">
+                                                <img src="assets/img/collections/image_10.jpg" alt width="380" height="500" loading="lazy">
+                                            </picture>
+                                        </div>
+                                    </a>
+                                </article>
+                            </li>
+                            <li class="collections__content-item">
+                                <article class="collection-card">
+                                    <button class="collection-card__btn" type="button" aria-label="Добавить в избранное"></button>
+                                    <a href="product_card.html" class="collection-card__wrapper">
+                                        <h2 class="collection-card__name">Saturn wedding dress</h2>
+                                        <div class="collection-card__img img-cover">
+                                            <picture>
+                                                <source srcset="assets/img/collections/image_11.webp" type="image/webp">
+                                                <img src="assets/img/collections/image_11.jpg" alt width="380" height="500" loading="lazy">
+                                            </picture>
+                                        </div>
+                                    </a>
+                                </article>
+                            </li>
+                            <li class="collections__content-item">
+                                <article class="collection-card">
+                                    <button class="collection-card__btn" type="button" aria-label="Добавить в избранное"></button>
+                                    <a href="product_card.html" class="collection-card__wrapper">
+                                        <h2 class="collection-card__name">Galaxy wedding dress</h2>
+                                        <div class="collection-card__img img-cover">
+                                            <picture>
+                                                <source srcset="assets/img/collections/image_12.webp" type="image/webp">
+                                                <img src="assets/img/collections/image_12.jpg" alt width="380" height="500" loading="lazy">
+                                            </picture>
+                                        </div>
+                                    </a>
+                                </article>
+                            </li>
+                        </ul>
+                        <div class="collections__descr">
+                            <h2 class="title title--h2 collections__descr-title">Galaxy Collection</h2>
+                            <p class="collections__descr-text">
+                                Свадебные платья из коллекции Dovita Galaxy - неизведанные, далекие, мистические, но в то же время такие красивые, завораживающие и манящие. Галактика стала центром нашего внимания и главным источником вдохновения для новой коллекции. Эта уникальная коллекция состоит из 12 свадебных платьев, названных в честь главных объектов галактики. Каждое из свадебных платьев обладает своим характером, шармом, ритмом и, самое главное, женственностью. Выберите свой культовый образ из свадебных платьев Dovita Galaxy!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- COLLECTIONS end -->
+
+
+        <!-- FORM-SECTION -->
+        <section class="form-section" id="form-section" data-form="fitting">
+            <div class="container">
+                <h2 class="title title--h2 form-section__title">ЗАПИШИТЕСЬ НА ПРИМЕРКУ</h2>
+                <div class="form-section__wrapper">
+                    <p class="form-section__wrapper-title">
+                        Выберите удобный день и мы свяжемся с вами:
+                    </p>
+                    <form action="server.php" class="form form-section__form" id="form-fitting">
+                        <div class="form-section__wrapper-inputs">
+                            <label class="input">
+                                <span class="el-hidden">Ваше имя</span>
+                                <input type="text" name="username" required placeholder="Ваше имя" data-name>
+                                <span class="input__message"></span>
+                            </label>
+                            <div class="input">
+                                <label class="el-hidden" for="userphone">Ваш номер телефона</label>
+                                <input type="tel" id="userphone" name="userphone" required data-phone>
+                                <span class="input__message"></span>
+                            </div>
+                            <label class="input">
+                                <span class="el-hidden">Ваш E-mail</span>
+                                <input type="email" name="useremail" required placeholder="Ваш E-mail" data-email>
+                                <span class="input__message"></span>
+                            </label>
+                            <label class="input input--date">
+                                <span class="el-hidden">Желаемая дата</span>
+                                <span class="input__placholder">Желаемая дата</span>
+                                <input type="date" name="userdate" required data-date>
+                                <span class="input__message"></span>
+                            </label>
+                        </div>
+                        <div class="form-section__footer">
+                            <p class="form-section__footer-policy">
+                                Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь <a href="#" target="_blank">с политикой конфиденциальности.</a>
+                            </p>
+                            <button class="btn form-section__btn" type="submit"><span>Записаться</span></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- POPUP-MESSAGE -->
+            <div class="popup-message" data-popup-message="success">
+                <div class="popup-message__wrapper">
+                    <button class="popup-message__close" type="button" aria-label="закрыть"></button>
+                    <p class="title title--h2 popup-message__title">Заявка отправлена!</p>
+                    <p class="popup-message__descr">Мы свяжемся с вами в <br>ближайшие время</p>
+                </div>
+            </div>
+
+            <div class="popup-message" data-popup-message="error">
+                <div class="popup-message__wrapper">
+                    <button class="popup-message__close" type="button" aria-label="закрыть"></button>
+                    <p class="title title--h2 popup-message__title">Ошибка!</p>
+                    <p class="popup-message__descr">Заявка не отправлена, <br>пожалуйста попробуйте позже</p>
+                </div>
+            </div>
+            <!-- POPUP-MESSAGE -->
+
+        </section>
+        <!-- FORM-SECTION end -->
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <nav class="container">
+            <ul class="footer__wrapper">
+                <li class="footer__wrapper-item">
+                    <h3 class="footer__title">dovita</h3>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a href="about.html" class="footer__list-link">О бренде</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="blog_1.html" class="footer__list-link">Блог</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__list-link">Аксессуары</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="stores.html" class="footer__list-link">Магазины</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="contacts.html" class="footer__list-link">Контакты</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="footer__wrapper-item">
+                    <h3 class="footer__title">Коллекции</h3>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a href="collections.html" class="footer__list-link">Dovita premium</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="collections.html" class="footer__list-link">Dovita couture</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="collections.html" class="footer__list-link">Dovita in white</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="collections.html" class="footer__list-link">Dovita kids</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="footer__wrapper-item">
+                    <h3 class="footer__title">поддержка</h3>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a href="qq.html" class="footer__list-link">Вопрос ответ</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="qq.html" class="footer__list-link">Доставка и оплата</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="stores.html#form-section" class="footer__list-link">Стать партнёром</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="footer__wrapper-item">
+                    <h3 class="footer__title footer__title--email">Подписка</h3>
+                    <form action="server.php" class="form-subscription" data-form="subscription">
+                        <label class="input input--email">
+                            <span class="el-hidden">Ваш E-mail</span>
+                            <input type="email" name="useremail" placeholder="E-mail" data-email>
+                            <span class="input__message"></span>
+                            <span class="input__icon"></span>
+                        </label>
+                        <button class="btn form-subscription__form-btn" type="submit"><span>Отправить</span></button>
+                        <p class="form-subscription__message form-subscription__message--success">Спасибо за подписку!</p>
+                        <p class="form-subscription__message form-subscription__message--error">Ошибка! Пожалуйста, попробуйте позже.</p>
+                    </form>
+                    <p class="footer__email-descr">
+                        Получайте уведомления о новых товарах и скидках.
+                    </p>
+                    <div class="footer__social">
+                        <p class="footer__social-text">Следите за нами:</p>
+                        <ul class="social">
+                            <li class="social__item">
+                                <a href="#" target="_blank" class="social__link">
+                                    <img src="assets/icons/social/facebook-white.svg" alt width="24" height="24" loading="lazy">
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a href="#" target="_blank" class="social__link">
+                                    <img src="assets/icons/social/instagram-white.svg" alt width="24" height="24" loading="lazy">
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a href="#" target="_blank" class="social__link">
+                                    <img src="assets/icons/social/youtube-white.svg" alt width="24" height="24" loading="lazy">
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a href="#" target="_blank" class="social__link">
+                                    <img src="assets/icons/social/pinterest-white.svg" alt width="24" height="24" loading="lazy">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+    <!-- FOOTER end -->
+</body>
+
+</html>

@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <title>Dovita</title>
+    <meta name="description" content="Описание сайта">
+    <link rel="icon" type="image/png" href="assets/favicon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg">
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <meta name="apple-mobile-web-app-title" content="Dovita">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <script defer src="assets/js/bundle.min.js"></script>
+</head>
+
+<body data-scrollbar>
+
+    <!-- HEADER -->
+    <header class="header" data-header="module" data-scrollbar>
+        <nav class="container">
+            <div class="header__top">
+                <ul class="header__lang">
+                    <li class="header__lang-item">
+                        <a href="#" class="header__lang-btn active">ENG</a>
+                    </li>
+                    <li class="header__lang-item">
+                        <a href="#" class="header__lang-btn">ITA</a>
+                    </li>
+                </ul>
+                <a href="#form-section" class="header__btn-modal">записаться на примерку</a>
+            </div>
+            <div class="header__bottom">
+                <button class="hamburger header__hamburger" type="button" aria-label="навигация">
+                    <span class="hamburger__stick"></span>
+                    <span class="hamburger__stick"></span>
+                    <span class="hamburger__stick"></span>
+                </button>
+                <div class="header__bottom-left">
+                    <a href="index.html" class="logo header__logo">
+                        <img src="assets/img/logo.svg" alt="Dovita" width="140" height="38">
+                    </a>
+                </div>
+                <div class="header__bottom-center">
+                    <ul class="header__list">
+                        <li class="header__list-item">
+                            <a href="collections.html" class="header__list-link">Коллекции</a>
+                        </li>
+                        <li class="header__list-item">
+                            <a href="collections.html" class="header__list-link">Свадебные платья</a>
+                        </li>
+                        <li class="header__list-item">
+                            <a href="#" class="header__list-link">Аксессуары</a>
+                        </li>
+                        <li class="header__list-item">
+                            <a href="about.html" class="header__list-link">О бренде</a>
+                        </li>
+                        <li class="header__list-item">
+                            <a href="blog_1.html" class="header__list-link">Блог</a>
+                        </li>
+                        <li class="header__list-item">
+                            <a href="trunk_show_1.html" class="header__list-link">Trunk show</a>
+                        </li>
+                        <li class="header__list-item">
+                            <a href="stores.html" class="header__list-link">Магазины</a>
+                        </li>
+                        <li class="header__list-item">
+                            <a href="contacts.html" class="header__list-link">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header__bottom-right">
+                    <button class="header__btn-search" type="button" data-trigger="search" aria-label="поиск"><span></span></button>
+                    <a href="#" class="header__btn-saved" aria-label="избранное"><span></span></a>
+                    <a href="#" class="header__btn-profile" aria-label="профиль"><span></span></a>
+                </div>
+            </div>
+        </nav>
+        <div class="header__search">
+            <div class="header__search-wrapper">
+                <form method="get" action="/" class="header__search-form" data-form="search-global">
+                    <label class="input">
+                        <span class="el-hidden">Поиск...</span>
+                        <input type="search" name="s" placeholder="Поиск..." data-search>
+                        <span class="input__message" data-error></span>
+                    </label>
+                    <button class="header__search-btn" type="submit" aria-label="поиск">
+                        <svg width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_198_1079)">
+                                <path d="M13.609 4.208a9.125 9.125 0 11-9.117 9.125 9.167 9.167 0 019.117-9.125zm0-1.708a10.833 10.833 0 100 21.667 10.833 10.833 0 000-21.667zm15.558 25.242l-6.142-6.184-1.183 1.175 6.142 6.184a.834.834 0 101.183-1.175z" />
+                            </g>
+                            <defs>
+                                <clippath id="clip0_198_1079">
+                                    <path d="M0 0h30v30H0z" />
+                                </clippath>
+                            </defs>
+                        </svg>
+                    </button>
+                </form>
+                <button class="header__search-btn-close" type="button" aria-label="закрыть"></button>
+            </div>
+        </div>
+    </header>
+
+    <nav class="nav-mobile" data-nav-mobile="module">
+        <div class="nav-mobile__big-wrapper">
+            <div class="nav-mobile__wrapper">
+                <div class="nav-mobile__main">
+                    <ul class="nav-mobile__list">
+                        <li class="nav-mobile__list-item">
+                            <a href="collections.html" class="nav-mobile__list-link">Коллекции</a>
+                        </li>
+                        <li class="nav-mobile__list-item">
+                            <a href="collections.html" class="nav-mobile__list-link">Свадебные платья</a>
+                        </li>
+                        <li class="nav-mobile__list-item">
+                            <a href="#" class="nav-mobile__list-link">Аксессуары</a>
+                        </li>
+                        <li class="nav-mobile__list-item">
+                            <a href="about.html" class="nav-mobile__list-link">О бренде</a>
+                        </li>
+                        <li class="nav-mobile__list-item">
+                            <a href="blog_1.html" class="nav-mobile__list-link">Блог</a>
+                        </li>
+                        <li class="nav-mobile__list-item">
+                            <a href="trunk_show_1.html" class="nav-mobile__list-link">Trunk show</a>
+                        </li>
+                        <li class="nav-mobile__list-item">
+                            <a href="stores.html" class="nav-mobile__list-link">Магазины</a>
+                        </li>
+                        <li class="nav-mobile__list-item">
+                            <a href="contacts.html" class="nav-mobile__list-link">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- HEADER end -->
+
+    <main class="page">
+
+        <!-- BREAD-CRUMBS -->
+        <div class="container">
+            <ul class="bread-crumbs bread-crumbs--pb27">
+                <li class="bread-crumbs__item">
+                    <a href="index.html" class="bread-crumbs__link">DOVITABRIDAL</a>
+                </li>
+                <li class="bread-crumbs__item">
+                    <a href="blog_1.html" class="bread-crumbs__link active">Новости</a>
+                </li>
+            </ul>
+        </div>
+        <!-- BREAD-CRUMBS end -->
+
+
+        <!-- NEWS -->
+        <section class="news">
+            <h1 class="el-hidden">Новости</h1>
+            <div class="container">
+                <a href="blog_2.html" class="news__wrapper-link">
+                    <article class="main-news">
+                        <div class="main-news__content">
+                            <time datetime="2022-03-31" class="main-news__time">March 31, 2022</time>
+                            <h2 class="main-news__title">Dovita Milano Bridal Shows Spring 2022</h2>
+                            <p class="main-news__descr">
+                                Since its establishment in 2009, Dovita Milano has presented its collections of fabulous wedding dresses at numerous international bridal fairs. March 13-15, National...
+                            </p>
+                            <div class="main-news__link">More</div>
+                        </div>
+                        <div class="main-news__img img-cover">
+                            <picture>
+                                <source srcset="assets/img/news/main/image_1.webp" type="image/webp">
+                                <img src="assets/img/news/main/image_1.jpg" alt width="680" height="360">
+                            </picture>
+                        </div>
+                    </article>
+                </a>
+                <ul class="news__list">
+                    <li class="news__list-item">
+                        <a href="blog_2.html" class="news__list-link">
+                            <article class="bridal-news">
+                                <div class="bridal-news__content">
+                                    <time datetime="2022-03-07" class="bridal-news__time">March 7, 2022</time>
+                                    <h2 class="bridal-news__title">Mermaid wedding dresses by Dovita Milano</h2>
+                                    <p class="bridal-news__descr">
+                                        Mermaid wedding dress is considered to be one of the most appealing silhouettes in today’s bridal fashion. Introduced in the end of XIX century, it was not until the...
+                                    </p>
+                                    <div class="bridal-news__link">More</div>
+                                </div>
+                                <div class="bridal-news__img img-cover">
+                                    <picture>
+                                        <source srcset="assets/img/news/bridal/image_1.webp" type="image/webp">
+                                        <img src="assets/img/news/bridal/image_1.jpg" alt width="380" height="220" loading="lazy">
+                                    </picture>
+                                </div>
+                            </article>
+                        </a>
+                    </li>
+                    <li class="news__list-item">
+                        <a href="blog_2.html" class="news__list-link">
+                            <article class="bridal-news">
+                                <div class="bridal-news__content">
+                                    <time datetime="2022-02-14" class="bridal-news__time">February 14, 2022</time>
+                                    <h2 class="bridal-news__title">Dovita Milano 2022</h2>
+                                    <p class="bridal-news__descr">
+                                        Dovita moves to Milan Breaking news! We are happy to announce one of Dovita's major plans for this year! In January 2022, a wedding dress manufacturer Dovita is...
+                                    </p>
+                                    <div class="bridal-news__link">More</div>
+                                </div>
+                                <div class="bridal-news__img img-cover">
+                                    <picture>
+                                        <source srcset="assets/img/news/bridal/image_2.webp" type="image/webp">
+                                        <img src="assets/img/news/bridal/image_2.jpg" alt width="380" height="220" loading="lazy">
+                                    </picture>
+                                </div>
+                            </article>
+                        </a>
+                    </li>
+                    <li class="news__list-item">
+                        <a href="blog_2.html" class="news__list-link">
+                            <article class="bridal-news">
+                                <div class="bridal-news__content">
+                                    <time datetime="2022-01-16" class="bridal-news__time">January 16, 2022</time>
+                                    <h2 class="bridal-news__title">Choosing a wedding dress by a body type</h2>
+                                    <p class="bridal-news__descr">
+                                        In Dovita Milano we strongly believe that every bride is unique and beautiful! We love to emphasize their beauty and provide our brides the most flattering wedding dresses...
+                                    </p>
+                                    <div class="bridal-news__link">More</div>
+                                </div>
+                                <div class="bridal-news__img img-cover">
+                                    <picture>
+                                        <source srcset="assets/img/news/bridal/image_3.webp" type="image/webp">
+                                        <img src="assets/img/news/bridal/image_3.jpg" alt width="380" height="220" loading="lazy">
+                                    </picture>
+                                </div>
+                            </article>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- NEWS end -->
+
+
+        <!-- FORM-SECTION -->
+        <section class="form-section pt0" id="form-section" data-form="fitting">
+            <div class="container">
+                <h2 class="title title--h2 form-section__title">ЗАПИШИТЕСЬ НА ПРИМЕРКУ</h2>
+                <div class="form-section__wrapper">
+                    <p class="form-section__wrapper-title">
+                        Выберите удобный день и мы свяжемся с вами:
+                    </p>
+                    <form action="server.php" class="form form-section__form" id="form-fitting">
+                        <div class="form-section__wrapper-inputs">
+                            <label class="input">
+                                <span class="el-hidden">Ваше имя</span>
+                                <input type="text" name="username" required placeholder="Ваше имя" data-name>
+                                <span class="input__message"></span>
+                            </label>
+                            <div class="input">
+                                <label class="el-hidden" for="userphone">Ваш номер телефона</label>
+                                <input type="tel" id="userphone" name="userphone" required data-phone>
+                                <span class="input__message"></span>
+                            </div>
+                            <label class="input">
+                                <span class="el-hidden">Ваш E-mail</span>
+                                <input type="email" name="useremail" required placeholder="Ваш E-mail" data-email>
+                                <span class="input__message"></span>
+                            </label>
+                            <label class="input input--date">
+                                <span class="el-hidden">Желаемая дата</span>
+                                <span class="input__placholder">Желаемая дата</span>
+                                <input type="date" name="userdate" required data-date>
+                                <span class="input__message"></span>
+                            </label>
+                        </div>
+                        <div class="form-section__footer">
+                            <p class="form-section__footer-policy">
+                                Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь <a href="#" target="_blank">с политикой конфиденциальности.</a>
+                            </p>
+                            <button class="btn form-section__btn" type="submit"><span>Записаться</span></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- POPUP-MESSAGE -->
+            <div class="popup-message" data-popup-message="success">
+                <div class="popup-message__wrapper">
+                    <button class="popup-message__close" type="button" aria-label="закрыть"></button>
+                    <p class="title title--h2 popup-message__title">Заявка отправлена!</p>
+                    <p class="popup-message__descr">Мы свяжемся с вами в <br>ближайшие время</p>
+                </div>
+            </div>
+
+            <div class="popup-message" data-popup-message="error">
+                <div class="popup-message__wrapper">
+                    <button class="popup-message__close" type="button" aria-label="закрыть"></button>
+                    <p class="title title--h2 popup-message__title">Ошибка!</p>
+                    <p class="popup-message__descr">Заявка не отправлена, <br>пожалуйста попробуйте позже</p>
+                </div>
+            </div>
+            <!-- POPUP-MESSAGE -->
+
+        </section>
+        <!-- FORM-SECTION end -->
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <nav class="container">
+            <ul class="footer__wrapper">
+                <li class="footer__wrapper-item">
+                    <h3 class="footer__title">dovita</h3>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a href="about.html" class="footer__list-link">О бренде</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="blog_1.html" class="footer__list-link">Блог</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__list-link">Аксессуары</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="stores.html" class="footer__list-link">Магазины</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="contacts.html" class="footer__list-link">Контакты</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="footer__wrapper-item">
+                    <h3 class="footer__title">Коллекции</h3>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a href="collections.html" class="footer__list-link">Dovita premium</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="collections.html" class="footer__list-link">Dovita couture</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="collections.html" class="footer__list-link">Dovita in white</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="collections.html" class="footer__list-link">Dovita kids</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="footer__wrapper-item">
+                    <h3 class="footer__title">поддержка</h3>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a href="qq.html" class="footer__list-link">Вопрос ответ</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="qq.html" class="footer__list-link">Доставка и оплата</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="stores.html#form-section" class="footer__list-link">Стать партнёром</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="footer__wrapper-item">
+                    <h3 class="footer__title footer__title--email">Подписка</h3>
+                    <form action="server.php" class="form-subscription" data-form="subscription">
+                        <label class="input input--email">
+                            <span class="el-hidden">Ваш E-mail</span>
+                            <input type="email" name="useremail" placeholder="E-mail" data-email>
+                            <span class="input__message"></span>
+                            <span class="input__icon"></span>
+                        </label>
+                        <button class="btn form-subscription__form-btn" type="submit"><span>Отправить</span></button>
+                        <p class="form-subscription__message form-subscription__message--success">Спасибо за подписку!</p>
+                        <p class="form-subscription__message form-subscription__message--error">Ошибка! Пожалуйста, попробуйте позже.</p>
+                    </form>
+                    <p class="footer__email-descr">
+                        Получайте уведомления о новых товарах и скидках.
+                    </p>
+                    <div class="footer__social">
+                        <p class="footer__social-text">Следите за нами:</p>
+                        <ul class="social">
+                            <li class="social__item">
+                                <a href="#" target="_blank" class="social__link">
+                                    <img src="assets/icons/social/facebook-white.svg" alt width="24" height="24" loading="lazy">
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a href="#" target="_blank" class="social__link">
+                                    <img src="assets/icons/social/instagram-white.svg" alt width="24" height="24" loading="lazy">
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a href="#" target="_blank" class="social__link">
+                                    <img src="assets/icons/social/youtube-white.svg" alt width="24" height="24" loading="lazy">
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a href="#" target="_blank" class="social__link">
+                                    <img src="assets/icons/social/pinterest-white.svg" alt width="24" height="24" loading="lazy">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+    <!-- FOOTER end -->
+</body>
+
+</html>
